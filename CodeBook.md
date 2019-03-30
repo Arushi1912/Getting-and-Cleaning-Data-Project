@@ -46,13 +46,13 @@ totalCombined (10299 rows, 88 columns) is created by subsetting totalCombined, s
 The numbers in the activity columns i.e activity codes is now replaced by corresponding activity in activity labels.
 
 <h5> Appropriately labels the data set </h5>
-All that start with 't' in column’s name subsituted with Time.
-All that start with character 'f' in column’s name subsituted with Frequency.
-All Acc in column’s name subsituted with Accelerometer.
-All Gyro in column’s name subsituted with Gyroscope.
-All Mag in column’s name subsituted with Magnitude.
-All -mean in column's name subsituted with Mean.
-All -std in column's name subsituted with STD.
+All that start with 't' in column’s name subsituted with Time. </br>
+All that start with character 'f' in column’s name subsituted with Frequency. </br>
+All Acc in column’s name subsituted with Accelerometer. </br>
+All Gyro in column’s name subsituted with Gyroscope. </br>
+All Mag in column’s name subsituted with Magnitude. </br>
+All -mean in column's name subsituted with Mean. </br>
+All -std in column's name subsituted with STD. </br>
 All BodyBody in column’s name subsituted with Body.
 
 
