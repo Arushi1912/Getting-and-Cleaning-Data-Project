@@ -6,25 +6,32 @@ features <- features.txt : 561 rows, 2 columns
 
 These features indicate gyroscopic and accelerometer measurements across all subjects and activities.
 
-activity_labels <- activity_labels.txt : 6 rows, 2 columns 
+activity_labels <- activity_labels.txt : 6 rows, 2 columns
+
 These indicate the corresponding activity for the activity code, eg : 1 for WALKING.
 
-subject_test <- test/subject_test.txt : 2947 rows, 1 column 
+subject_test <- test/subject_test.txt : 2947 rows, 1 column
+
 These contain test data (ids) for 30% of the subjects. 
 
 x_test <- test/X_test.txt : 2947 rows, 561 columns 
+
 These contain measured data across all features for 30% of the subjects.
 
 y_test <- test/y_test.txt : 2947 rows, 1 columns 
+
 These contain the performed activity code across all features for 30% of the subject.
 
 subject_train <- test/subject_train.txt : 7352 rows, 1 column 
+
 These contain test data (ids) for 70% of the subjects.
 
 x_train <- test/X_train.txt : 7352 rows, 561 columns 
+
 These contain measured data across all features for 70% of the subjects.
 
 y_train <- test/y_train.txt : 7352 rows, 1 columns 
+
 These contain the performed activity code across all features for 30% of the subject.
 
 <h5> Process activity_labels and features </h5>
