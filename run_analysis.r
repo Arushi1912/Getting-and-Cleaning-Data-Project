@@ -1,4 +1,6 @@
 #Loaded dplyr and data table packages.
+library(dplyr)
+library(data.table)
 #Inside the UCI Har dataset folder.
 
 #Loads features and activity labels
@@ -18,7 +20,7 @@ y_train <- data.table::fread("./train/y_train.txt")
 #Processing 
 features <- features[, 2]
 activity_labels <- activity_labels[, 2]
-requiredFeatures <- c("Subject", "Activity", features$V2[grep("mean\\(\\)|std\\(\\)", features$V2) ])
+requiredFeatures <- c("Subject", "Activity", features$V2[grep("mean|std", features$V2) ])
 
 
 #1. Merges the training and the test sets to create one data set.
@@ -50,7 +52,7 @@ names(totalCombined) <- gsub("-mean", "Mean", names(totalCombined))
 names(totalCombined) <- gsub("-std", "STD", names(totalCombined))
 names(totalCombined) <- gsub("BodyBody", "Body", names(totalCombined))
 
-#From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+#5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 totalCombined <- totalCombined %>% group_by(Subject, Activity) %>% summarize_all(mean)
 
 #Write the datatable as a txt file
