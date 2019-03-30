@@ -47,19 +47,12 @@ The numbers in the activity columns i.e activity codes is now replaced by corres
 
 <h5> Appropriately labels the data set </h5>
 All that start with 't' in column’s name subsituted with Time.
-
 All that start with character 'f' in column’s name subsituted with Frequency.
-
 All Acc in column’s name subsituted with Accelerometer.
-
 All Gyro in column’s name subsituted with Gyroscope.
-
 All Mag in column’s name subsituted with Magnitude.
-
 All -mean in column's name subsituted with Mean.
-
 All -std in column's name subsituted with STD.
-
 All BodyBody in column’s name subsituted with Body.
 
 
