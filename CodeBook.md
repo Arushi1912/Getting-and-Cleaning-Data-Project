@@ -2,7 +2,8 @@
 Dataset is downloaded and extracted to a folder named "UCI HAR Dataset"
 
 <h5> Assigning data to variables </h5>
-features <- features.txt : 561 rows, 2 columns 
+features <- features.txt : 561 rows, 2 columns
+
 These features indicate gyroscopic and accelerometer measurements across all subjects and activities.
 
 activity_labels <- activity_labels.txt : 6 rows, 2 columns 
